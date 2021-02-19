@@ -59,3 +59,5 @@ def runPerKmer():
 	#print(ListOfKmers)
 runPerKmer()
 
+#average the five numbers for each time given per gene in white2017_tpm.txt and multiply by frequencies we produced of kmers
+#
