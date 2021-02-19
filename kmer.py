@@ -60,10 +60,10 @@ def runPerKmer():
 #runPerKmer()
 
 #average the five numbers for each time given per gene in white2017_tpm.txt and multiply by frequencies we produced of kmers
-def geneFreq():
+def rnaSeq():
     targetFile1 = open("white2017_tpm.txt", "r")
     for gene in targetFile1:
         #gene that is printed: first is the gene name, then the values for each time being printed
         #need to average every 5 points together and then multiple by our frequencies found before
         print(gene) 
-geneFreq()
+rnaSeq()
