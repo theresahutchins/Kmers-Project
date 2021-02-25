@@ -33,20 +33,15 @@ UTR=0
 
 #finding all possible kmers of len k
 def kmers(Tseq, k):
-
-	kFreq = {}
-
-	for i in range(0, len(Tseq) - k +1): #range 0 -> length of target seq 
-
-		kmer = Tseq[i:i + k] #indexing way to slice up target sequence according to k
-
+    kFreq = {}
+    for i in range(0, len(Tseq) - k +1): #range 0 -> length of target seq 
+        kmer = Tseq[i:i + k] #indexing way to slice up target sequence according to k
         if "N" not in kmer:
             if kmer in kFreq:
                 kFreq[kmer] += 1 #if it matches add 1 to frequency 
             else:
                 kFreq[kmer] = 1 #if it doesnt match, adds key to dict w/ value of 1
-
-	return kFreq
+    return kFreq
 
 def runPerKmer():
     finalDic5={}
